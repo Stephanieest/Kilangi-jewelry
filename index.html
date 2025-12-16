@@ -1,292 +1,87 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>KILANGI — Timeless Jewellery</title>
-    
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
-    
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>KILANGI — Timeless Jewellery</title>
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <!-- Main stylesheet -->
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Top Promo Bar -->
-    <div class="top-bar">
-        <div class="container">
-            <div class="top-bar-content">
-                <p class="promo-text">✨ Step into Sparkle – Pure Gold & Silver Await ✨</p>
-                <div class="social-icons">
-                    <a href="#" class="social-icon">Instagram</a>
-                    <a href="#" class="social-icon">Facebook</a>
-                    <a href="#" class="social-icon">Pinterest</a>
-                </div>
-            </div>
+  <!-- Top teal promo (centered text with social icons at right) -->
+  <div class="topbar" role="note">
+    <div class="container topbar-inner">
+      <div class="topbar-center">Step into Sparkle – Pure Gold & Silver Await</div>
+
+      <div class="topbar-right" aria-hidden="false">
+        <a href="#" class="social-icon" aria-label="Instagram">
+          <!-- simple Instagram SVG -->
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true" focusable="false">
+            <rect x="3" y="3" width="18" height="18" rx="4" stroke="currentColor" stroke-width="1.2"/>
+            <circle cx="12" cy="12" r="3.2" stroke="currentColor" stroke-width="1.2"/>
+            <circle cx="17.2" cy="6.8" r="0.6" fill="currentColor"/>
+          </svg>
+        </a>
+
+        <a href="#" class="social-icon" aria-label="Facebook">
+          <!-- simple Facebook SVG -->
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true" focusable="false">
+            <path d="M15 8h2.2V5.6c0-1.1-.6-1.4-1.3-1.4H15V2h-2.2C11.9 2 11 2.7 11 4v2H9.2v2.6H11v6.8H13v-6.8h2.1L16.2 10H13V8z" fill="currentColor"/>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="site-header" role="banner">
+    <div class="container header-grid">
+      <!-- LEFT: Search -->
+      <div class="header-left">
+        <form class="search-pill" role="search" action="#" method="get" aria-label="Search">
+          <input type="search" name="q" placeholder="Search for Earrings.." aria-label="Search for Earrings" />
+          <button type="submit" aria-label="Search">
+            <svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="11" cy="11" r="6" stroke="currentColor" stroke-width="1.5" fill="none"/><path d="M20 20l-4.3-4.3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+          </button>
+        </form>
+      </div>
+
+      <!-- CENTER: Logo -->
+      <div class="header-center">
+        <a href="/" class="brand" aria-label="KILANGI home">
+          KILANGI
+        </a>
+      </div>
+
+      <!-- RIGHT: Icons -->
+      <div class="header-right">
+        <div class="header-actions" role="group" aria-label="Account actions">
+          <button class="icon" aria-label="Wishlist" title="Wishlist">♡</button>
+          <button class="icon" aria-label="Account" title="Account">⚲</button>
+          <button class="icon" aria-label="Cart" title="Cart">🛒</button>
         </div>
+      </div>
     </div>
 
-    <!-- Main Header -->
-    <header class="main-header">
-        <div class="container">
-            <div class="header-content">
-                <!-- Logo -->
-                <div class="logo">
-                    <a href="/" class="logo-link">
-                        <span class="logo-text">KILANGI</span>
-                        <span class="logo-subtext">Timeless Jewellery</span>
-                    </a>
-                </div>
-                
-                <!-- Navigation -->
-                <nav class="main-nav">
-                    <a href="#" class="nav-link">All Jewellery</a>
-                    <a href="#" class="nav-link">Gold</a>
-                    <a href="#" class="nav-link">Silver</a>
-                    <a href="#" class="nav-link">New Arrivals</a>
-                    <a href="#" class="nav-link">Gifting</a>
-                    <a href="#" class="nav-link">About Us</a>
-                </nav>
-                
-                <!-- Header Icons -->
-                <div class="header-icons">
-                    <button class="icon-btn">♥</button>
-                    <button class="icon-btn">👤</button>
-                    <button class="icon-btn">🛒</button>
-                </div>
-            </div>
-        </div>
-    </header>
+    <!-- Beige subnav -->
+    <nav class="subnav" role="navigation" aria-label="Primary categories">
+      <div class="container subnav-inner">
+        <ul class="nav-list" role="menubar" aria-label="Main navigation">
+          <li role="none"><a role="menuitem" href="#">All Jewellery</a></li>
+          <li role="none"><a role="menuitem" href="#">Gold</a></li>
+          <li role="none"><a role="menuitem" href="#">Silver</a></li>
+          <li role="none"><a role="menuitem" href="#">Gifting</a></li>
+          <li role="none"><a role="menuitem" href="#">About Us</a></li>
+          <li role="none"><a role="menuitem" href="#">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
 
-    <!-- Hero Section -->
-    <section class="hero">
-        <div class="container">
-            <div class="hero-grid">
-                <!-- Hero Text -->
-                <div class="hero-text">
-                    <h1 class="hero-title">
-                        Because You Deserve to<br>
-                        <span class="italic">Feel Timeless.</span>
-                    </h1>
-                    <p class="hero-desc">
-                        Each piece is thoughtfully designed to celebrate your individuality — blending modern elegance with lasting craftsmanship.
-                    </p>
-                    <div class="hero-buttons">
-                        <a href="#" class="btn btn-primary">Shop Bestsellers →</a>
-                        <a href="#" class="btn btn-secondary">Learn More</a>
-                    </div>
-                </div>
-                
-                <!-- Hero Image -->
-                <div class="hero-image">
-                    <div class="image-placeholder">HERO IMAGE</div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Features Bar -->
-    <section class="features">
-        <div class="container">
-            <div class="features-grid">
-                <div class="feature-item">
-                    <div class="feature-icon">○</div>
-                    <span>Anti‑Fade Polish</span>
-                </div>
-                <div class="feature-item">
-                    <div class="feature-icon">□</div>
-                    <span>Timeless Design</span>
-                </div>
-                <div class="feature-item">
-                    <div class="feature-icon">+</div>
-                    <span>Lightweight Comfort</span>
-                </div>
-                <div class="feature-item">
-                    <div class="feature-icon">—</div>
-                    <span>Modern Minimal</span>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Bestsellers Section -->
-    <section class="bestsellers">
-        <div class="container">
-            <h2 class="section-title">Explore Our <em>Timeless Bestsellers</em></h2>
-            
-            <!-- Category Filters -->
-            <div class="category-filters">
-                <button class="filter-btn active">All</button>
-                <button class="filter-btn">Rings</button>
-                <button class="filter-btn">Earrings</button>
-                <button class="filter-btn">Pendants</button>
-                <button class="filter-btn">Bracelets</button>
-                <button class="filter-btn">Bangles</button>
-            </div>
-            
-            <!-- Products Grid -->
-            <div class="products-grid">
-                <!-- Product 1 -->
-                <div class="product-card">
-                    <div class="product-image">
-                        <div class="image-placeholder">PRODUCT 1</div>
-                    </div>
-                    <h3 class="product-title">TWISTED PETAL GOLD BRACELET</h3>
-                    <div class="product-price">
-                        <span class="current-price">₹79,904</span>
-                        <span class="old-price">₹99,904</span>
-                    </div>
-                    <button class="product-btn">Add to Cart</button>
-                </div>
-                
-                <!-- Product 2 -->
-                <div class="product-card">
-                    <div class="product-image">
-                        <div class="image-placeholder">PRODUCT 2</div>
-                    </div>
-                    <h3 class="product-title">DIAMOND STUD EARRINGS</h3>
-                    <div class="product-price">
-                        <span class="current-price">₹1,25,000</span>
-                    </div>
-                    <button class="product-btn">Add to Cart</button>
-                </div>
-                
-                <!-- Product 3 -->
-                <div class="product-card">
-                    <div class="product-image">
-                        <div class="image-placeholder">PRODUCT 3</div>
-                    </div>
-                    <h3 class="product-title">SOLITAIRE GOLD PENDANT</h3>
-                    <div class="product-price">
-                        <span class="current-price">₹65,500</span>
-                        <span class="old-price">₹78,000</span>
-                    </div>
-                    <button class="product-btn">Add to Cart</button>
-                </div>
-                
-                <!-- Product 4 -->
-                <div class="product-card">
-                    <div class="product-image">
-                        <div class="image-placeholder">PRODUCT 4</div>
-                    </div>
-                    <h3 class="product-title">CHAIN LINK BRACELET</h3>
-                    <div class="product-price">
-                        <span class="current-price">₹92,000</span>
-                    </div>
-                    <button class="product-btn">Add to Cart</button>
-                </div>
-            </div>
-            
-            <!-- View All Button -->
-            <div class="section-footer">
-                <a href="#" class="btn btn-primary">View All Collections →</a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Brand Story Section -->
-    <section class="brand-story">
-        <div class="container">
-            <div class="story-grid">
-                <!-- Story Image -->
-                <div class="story-image">
-                    <div class="image-placeholder">OUR CRAFT</div>
-                </div>
-                
-                <!-- Story Text -->
-                <div class="story-text">
-                    <span class="section-label">OUR ETHOS</span>
-                    <h2 class="story-title">
-                        Every <em>Shape.</em><br>
-                        Every <em>Sparkle.</em>
-                    </h2>
-                    <p class="story-desc">
-                        Every piece we create is a blend of artistry and awareness handcrafted with precision, guided by purpose.
-                    </p>
-                    <p class="story-desc">
-                        From ethically sourced materials to sustainable processes, we believe true beauty shines brightest when it's made responsibly.
-                    </p>
-                    <a href="#" class="btn btn-primary">Know More About Us →</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Testimonials Section -->
-    <section class="testimonials">
-        <div class="container">
-            <h2 class="section-title">Voices of Our <em>Happy Customers</em></h2>
-            
-            <div class="testimonials-grid">
-                <!-- Testimonial 1 -->
-                <div class="testimonial-card">
-                    <div class="testimonial-stars">★★★★★</div>
-                    <p class="testimonial-text">
-                        "The craftsmanship is exceptional! My gold necklace looks even better in person."
-                    </p>
-                    <div class="testimonial-author">
-                        <strong>Priya Sharma</strong>
-                        <span>Delhi</span>
-                    </div>
-                </div>
-                
-                <!-- Testimonial 2 -->
-                <div class="testimonial-card">
-                    <div class="testimonial-stars">★★★★★</div>
-                    <p class="testimonial-text">
-                        "Perfect gift for my wife's anniversary. The quality is outstanding!"
-                    </p>
-                    <div class="testimonial-author">
-                        <strong>Rajesh Kumar</strong>
-                        <span>Mumbai</span>
-                    </div>
-                </div>
-                
-                <!-- Testimonial 3 -->
-                <div class="testimonial-card">
-                    <div class="testimonial-stars">★★★★★</div>
-                    <p class="testimonial-text">
-                        "Love the ethical approach. Beautiful jewellery with a conscience."
-                    </p>
-                    <div class="testimonial-author">
-                        <strong>Ananya Patel</strong>
-                        <span>Bangalore</span>
-                    </div>
-                </div>
-                
-                <!-- Testimonial 4 -->
-                <div class="testimonial-card">
-                    <div class="testimonial-stars">★★★★★</div>
-                    <p class="testimonial-text">
-                        "The packaging and presentation made it feel like a luxury experience."
-                    </p>
-                    <div class="testimonial-author">
-                        <strong>Rohan Mehta</strong>
-                        <span>Chennai</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Newsletter Section -->
-    <section class="newsletter">
-        <div class="container">
-            <div class="newsletter-content">
-                <h2 class="newsletter-title">Stay in the <em>Sparkle</em></h2>
-                <p class="newsletter-text">
-                    Be the first to know about new collections, exclusive offers, and styling tips.
-                </p>
-                <form class="newsletter-form">
-                    <input type="email" placeholder="Your email address" required>
-                    <button type="submit" class="btn btn-primary">Subscribe</button>
-                </form>
-                <p class="newsletter-note">We respect your privacy. Unsubscribe at any time.</p>
-            </div>
-        </div>
-    </section>
-
-    <script src="main.js"></script>
+  <script src="main.js"></script>
 </body>
 </html>
