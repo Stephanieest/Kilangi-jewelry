@@ -209,10 +209,19 @@ body {
   padding: 8px;
   border-radius: 8px;
   cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease;
 }
 
 .icon-btn:hover {
   color: var(--text-dark);
+  background: rgba(16, 34, 31, 0.05);
+}
+
+.icon-btn svg {
+  display: block;
 }
 
 /* ===== PRIMARY NAVIGATION ===== */
